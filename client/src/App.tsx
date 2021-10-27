@@ -5,6 +5,8 @@ import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { SingleImgInput } from "./component/SingleImgInput";
 import styled from "styled-components";
+import { DragAndDrop } from "./component/DragAndDrop";
+import { Carousel } from "./component/Carousel";
 
 const Nav = styled.div`
   display: flex;
@@ -29,10 +31,18 @@ function App() {
         <button onClick={() => (window.location.href = "/singleImgInput")}>
           single img input
         </button>
+        <button onClick={() => (window.location.href = "/dragAndDrop")}>
+          drag and drop
+        </button>
+        <button onClick={() => (window.location.href = "/carousel")}>
+          carousel
+        </button>
       </Nav>
       <Body>
         <Router history={history}>
           <Route path="/singleImgInput" component={SingleImgInput} />
+          <Route path="/dragAndDrop" component={DragAndDrop} />
+          <Route path="/carousel" component={Carousel} />
         </Router>
       </Body>
     </div>
