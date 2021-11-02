@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { Nav } from "./Nav";
 
 const UploadButton = styled.label`
   padding: 5px;
@@ -18,6 +19,7 @@ export const SingleImgInput = () => {
 
   return (
     <>
+      <Nav />
       <UploadButton htmlFor="imgInput">upload img</UploadButton>
       <UploadInput
         id="imgInput"
