@@ -9,19 +9,6 @@ import { DragAndDrop } from "./component/DragAndDrop";
 import { Carousel } from "./component/Carousel";
 import { Home } from "./component/Home";
 
-const Nav = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 30px;
-  background-color: aliceblue;
-`;
-
-const Body = styled.div`
-  padding: 50px;
-`;
-
 function App() {
   const history = createBrowserHistory();
 
